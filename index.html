@@ -9,12 +9,13 @@ body { margin: 0; background: #0d0d0d; font-family: Arial, sans-serif; color: wh
 .avatar img { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #00aaff; box-shadow: 0 0 20px #00aaff; margin-top: 30px; }
 h1 { margin: 15px 0 5px; }
 .desc { color: #00aaff; font-size: 14px; margin-bottom: 30px; }
-.btn { display: flex; align-items: center; margin: 15px auto; width: 85%; padding: 14px; border-radius: 30px; background: #e5e5e5; color: #000; text-decoration: none; font-weight: bold; box-shadow: 6px 6px 0px #003366; transition: 0.2s; box-sizing: border-box; }
+.btn { display: flex; align-items: center; margin: 15px auto; width: 85%; max-width: 400px; padding: 14px; border-radius: 30px; background: #e5e5e5; color: #000; text-decoration: none; font-weight: bold; box-shadow: 6px 6px 0px #003366; transition: 0.2s; box-sizing: border-box; }
 .btn img { width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; }
 .btn:active { transform: scale(0.95); }
 .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); z-index: 10000; justify-content: center; align-items: center; backdrop-filter: blur(5px); }
 .popup { background: #1a1a1a; width: 85%; max-width: 350px; padding: 25px; border-radius: 20px; border: 2px solid #00aaff; position: relative; }
-.sub-btn { display: block; background: #ffffff; color: #000; padding: 14px; margin: 12px 0; text-decoration: none; border-radius: 12px; font-weight: bold; }
+.sub-btn { display: block; background: #ffffff; color: #000; padding: 14px; margin: 12px 0; text-decoration: none; border-radius: 12px; font-weight: bold; transition: 0.2s; }
+.sub-btn:active { background: #00aaff; color: white; }
 .close-x { position: absolute; top: 10px; right: 15px; color: white; font-size: 25px; cursor: pointer; }
 </style>
 </head>
@@ -22,18 +23,24 @@ h1 { margin: 15px 0 5px; }
 <div class="avatar"><img src="https://i.pinimg.com/originals/a1/b2/0a/a1b20a74805a120935a780893170aed3.gif"></div>
 <h1>VÔ CHI HUB</h1>
 <p class="desc">Hack Android Developer</p>
+
 <a class="btn" href="https://discord.gg/ADZUV7duu"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">Server Discord</a>
 <a class="btn" href="https://tiktok.com/@idol_datrang8"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">TikTok Cá Nhân</a>
+
 <a class="btn" href="javascript:void(0)" onclick="openBox()"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">Tổng hợp Client VNG</a>
+
 <div class="overlay" id="boxLink">
     <div class="popup">
         <span class="close-x" onclick="closeBox()">&times;</span>
         <h3 style="color:#00aaff">CHỌN PHIÊN BẢN</h3>
+        
         <a href="https://www.mediafire.com/file/ipjryzyulpcul1v/Delta_Vng-2.714.1096_Up.apk/file" target="_blank" class="sub-btn">Delta VNG 2.714</a>
-        <a href="https://www.mediafire.com/file/5p08n8qhtsv
-                    <a href="https://www.mediafire.com/file/qgj533yutpnutb5/Roblox.-.VNG.Arceus.X.NEO.2.1.2_sign_sign_sign_sign.apk/file" target="_blank" class="sub-btn">Arceus X NEO VNG</a>
+        <a href="https://www.mediafire.com/file/5p08n8qhtsv4x3s/Codex+VNG+V2.715+No+Key.apk/file" target="_blank" class="sub-btn">Codex VNG No Key</a>
+        <a href="https://www.mediafire.com/file/qgj533yutpnutb5/Roblox.-.VNG.Arceus.X.NEO.2.1.2_sign_sign_sign_sign.apk/file" target="_blank" class="sub-btn">Arceus X NEO VNG</a>
+        
     </div>
 </div>
+
 <script>
 function openBox() { document.getElementById('boxLink').style.display = 'flex'; }
 function closeBox() { document.getElementById('boxLink').style.display = 'none'; }
@@ -41,4 +48,3 @@ window.onclick = function(e) { if (e.target == document.getElementById('boxLink'
 </script>
 </body>
 </html>
-
